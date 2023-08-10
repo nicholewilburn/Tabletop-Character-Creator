@@ -42,7 +42,7 @@ Character.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-    physical: {
+    look: {
         type: DataTypes.STRING,
         allowNull: false,
       },
