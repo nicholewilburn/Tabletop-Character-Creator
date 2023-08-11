@@ -1,3 +1,4 @@
+{{/each}}
 <div class="box">
   <article class="media">
     <div class="media-left">
@@ -22,7 +23,7 @@
 </div>
 
 {{#each character as |character|}}
-<div class="box">
+<div class="row mb-4 box">
   <article class="media">
     <div class="media-left">
       <figure class="image is-64x64">
@@ -30,12 +31,31 @@
       </figure>
     </div>
     <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>{{name}}</strong> <small>{{gender}}</small>
-          <br>
-          {{background}}
-        </p>
+      <div class="content col-md-5">
+        <h2>
+          <a href="/character/{{character.id}}">{{character.name}}</a>
+        </h2>
+        <p>{{character.gender}}</p>
+        <p>{{character.race}}</p>
+        <p>{{character.class}}</p>
+
+        <div class="col-md-7">
+            <p>{{character.description}}</p>
+            {{!-- <p>{{character.background}}</p>
+            <p>{{character.look}}</p>
+            <p>{{character.personality}}</p> --}}
+        </div>
+
+        {{!-- <div class="character-stats">
+          <p>{{character.strength}}</p>
+          <p>{{character.dexterity}}</p>
+          <p>{{character.constitution}}</p>
+          <p>{{character.intelligence}}</p>
+          <p>{{character.wisdom}}</p>
+          <p>{{character.charisma}}</p>
+        </div> --}}
+
+        <p>Created by {{character.user.name}} on {{format_date character.date_created}}</p>
       </div>
     </div>
   </article>
