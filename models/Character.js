@@ -28,6 +28,10 @@ Character.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
+    class: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
     race: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -81,7 +85,7 @@ Character.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'character',
   }
 );
 
