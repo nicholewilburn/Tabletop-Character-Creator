@@ -8,18 +8,22 @@
     <p>{{character.race}}</p>
     <p>{{character.class}}</p>
 
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+    <div class="col-md-7">
+        <p>{{character.description}}</p>
+        {{!-- <p>{{character.background}}</p>
+        <p>{{character.look}}</p>
+        <p>{{character.personality}}</p> --}}
+    </div>
+
+    {{!-- <p>{{character.strength}}</p>
+    <p>{{character.dexterity}}</p>
+    <p>{{character.constitution}}</p>
+    <p>{{character.intelligence}}</p>
+    <p>{{character.wisdom}}</p>
+    <p>{{character.charisma}}</p> --}}
+
+    <p>Created by {{character.user.name}} on {{format_date character.date_created}}</p>
   </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
+
 </div>
 {{/each}}
