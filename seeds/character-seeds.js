@@ -2,7 +2,6 @@ const { Character } = require('../models');
 
 const characterData = [
   {
-    id: 1, 
     user_id: 1,
     name: 'May Maureen McCallister',
     gender: 'female',
@@ -14,13 +13,12 @@ const characterData = [
     personality: 'bright, caring, impatient, unstable',
     strength: 15,
     dexterity: 6,
-    consitution: 14,
+    constitution: 14,
     intelligence: 9,
     wisdom: 10,
     charisma: 11,
 },
   {
-    id: 2,
     user_id: 2,
     name: 'Humphrey Roth',
     gender: 'female',
@@ -32,7 +30,7 @@ const characterData = [
     personality: 'Callous, group-dependent, clever, non-rebellious and honourable',
     strength: 4,
     dexterity: 13,
-    consitution: 11,
+    constitution: 11,
     intelligence: 18,
     wisdom: 12,
     charisma: 8,
