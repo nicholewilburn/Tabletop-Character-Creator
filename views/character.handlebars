@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Create a New Character:</h3>
+
+    <form class="form new-character-form">
+      <div class="form-group">
+        <label for="character-name">character name:</label>
+        <input class="form-input" type="text" id="character-name" name="character-name" />
+      </div>
+      <div class="form-group">
+        <label for="gender">gender:</label>
+        <input class="form-input" type="text" id="gender" name="gender" />
+      </div>
+      <div class="form-group">
+        <label for="race">race:</label>
+        <input class="form-input" type="text" id="race" name="race" />
+      </div>
+      <div class="form-group">
+        <label for="class">class:</label>
+        <input class="form-input" type="text" id="class" name="class" />
+      </div>
+      <div class="form-group">
+        <label for="description">description:</label>
+        <textarea class="form-input" id="description" name="description"></textarea>
+      </div>
+      {{!-- <div class="form-group">
+        <label for="background">background:</label>
+        <input class="form-input" type="text" id="background" name="background" />
+      </div>
+      <div class="form-group">
+        <label for="look">look:</label>
+        <input class="form-input" type="text" id="look" name="look" />
+      </div>
+      <div class="form-group">
+        <label for="personality">personality:</label>
+        <input class="form-input" type="text" id="personality" name="personality" />
+      </div> --}}
+      
+      {{!-- Attributes --}}
+      {{!-- <div class="form-group">
+        <label for="strength">strength:</label>
+        <input class="form-input" type="number" id="strength" name="strength" />
+      </div>
+      <div class="form-group">
+        <label for="dexterity">dexterity:</label>
+        <input class="form-input" type="number" id="dexterity" name="dexterity" />
+      </div>
+      <div class="form-group">
+        <label for="constitution">constitution:</label>
+        <input class="form-input" type="number" id="constitution" name="constitution" />
+      </div>
+      <div class="form-group">
+        <label for="intelligence">intelligence:</label>
+        <input class="form-input" type="number" id="intelligence" name="intelligence" />
+      </div>
+      <div class="form-group">
+        <label for="wisdom">wisdom:</label>
+        <input class="form-input" type="number" id="wisdom" name="wisdom" />
+      </div>
+      <div class="form-group">
+        <label for="charisma">charisma:</label>
+        <input class="form-input" type="number" id="charisma" name="charisma" />
+      </div> --}}
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if characters.length}}
+  <div class="col-md-6 character-list">
+    <h3>Current Characters:</h3>
+
+    {{#each characters as |character|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/character/{{character.id}}">{{character.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>
