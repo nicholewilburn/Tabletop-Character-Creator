@@ -1,12 +1,12 @@
 const newFormHandler = async (event) => {
-  // event.preventDefault();
+  event.preventDefault();
 
-  // const name = document.querySelector('#').value.trim();
-  // const gender = document.querySelector('#').value.trim();
-  // const race = document.querySelector('#').value.trim();
-  // const class = document.querySelector('#').value.trim();
+  const name = document.querySelector('#character-name').value.trim();
+  const gender = document.querySelector('#gender').value.trim();
+  const race = document.querySelector('#race').value.trim();
+  const classs = document.querySelector('#classs').value.trim();
 
-  // const description = document.querySelector('#').value.trim();
+  const description = document.querySelector('#description').value.trim();
   // const background = document.querySelector('#').value.trim();
   // const look = document.querySelector('#').value.trim();
   // const personality = document.querySelector('#').value.trim();
@@ -18,21 +18,21 @@ const newFormHandler = async (event) => {
   // const wisdom = document.querySelector('#').value.trim();
   // const charisma = document.querySelector('#').value.trim();
 
-  // if (name && gender && race && class && description) {
-  //   const response = await fetch(`/api/characters`, {
-  //     method: 'POST',
-  //     body: JSON.stringify({ name, gender, race, class, description }),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //   });
+  if (name && gender && race && classs && description) {
+    const response = await fetch(`/api/characters`, {
+      method: 'POST',
+      body: JSON.stringify({ name, gender, race, classs, description }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
 
-  //   if (response.ok) {
-  //     document.location.replace('/profile');
-  //   } else {
-  //     alert('Failed to create project');
-  //   }
-  // }
+    if (response.ok) {
+      document.location.replace('/profile');
+    } else {
+      alert('Failed to create project');
+    }
+  }
 };
 
 const delButtonHandler = async (event) => {
