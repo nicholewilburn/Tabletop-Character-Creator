@@ -7,16 +7,16 @@ const newFormHandler = async (event) => {
   const classs = document.querySelector('#classs').value.trim();
 
   const description = document.querySelector('#description').value.trim();
-  // const background = document.querySelector('#').value.trim();
-  // const look = document.querySelector('#').value.trim();
-  // const personality = document.querySelector('#').value.trim();
+  // const background = document.querySelector('#background').value.trim();
+  // const look = document.querySelector('#look').value.trim();
+  // const personality = document.querySelector('#personality').value.trim();
 
-  // const strength = document.querySelector('#').value.trim();
-  // const dexterity = document.querySelector('#').value.trim();
-  // const charisma = document.querySelector('#').value.trim();
-  // const intelligence = document.querySelector('#').value.trim();
-  // const wisdom = document.querySelector('#').value.trim();
-  // const charisma = document.querySelector('#').value.trim();
+  // const strength = document.querySelector('#strength').value.trim();
+  // const dexterity = document.querySelector('#dexterity').value.trim();
+  // const charisma = document.querySelector('#charisma').value.trim();
+  // const intelligence = document.querySelector('#intelligence').value.trim();
+  // const wisdom = document.querySelector('#wisdom').value.trim();
+  // const charisma = document.querySelector('#charisma').value.trim();
 
   if (name && gender && race && classs && description) {
     const response = await fetch(`/api/characters`, {
