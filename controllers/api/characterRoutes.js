@@ -4,6 +4,43 @@ const withAuth = require('../../utils/auth');
 
 // for character crud
 
+// read character (add withAuth later?)
+// router.get('/:id', async (req, res) => {
+//   try {
+//     const characterData = await Character.findByPk(req.params.id, {
+//       include: [
+//         {
+//           model: User,
+//           attributes: ['name'],
+//         },
+//       ],
+//     });
+
+//     const character = characterData.get({ plain: true });
+
+//     res.render('character', {
+//       ...character,
+//       // logged_in: req.session.logged_in
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+router.get('/:id', async (req, res) => {
+  try {
+      const characterData = await Character.findByPk(req.params.id);
+
+      if (!characterData) {
+          res.status(404).json({ message: 'No character found with that id!' });
+          return;
+      }
+
+      res.status(200).json(characterData);
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
+
 // create character (add withAuth later?)
 router.post('/', async (req, res) => {
   try {
