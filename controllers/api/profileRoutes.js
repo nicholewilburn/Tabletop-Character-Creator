@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const { Character, User } = require('../models');
-const withAuth = require('../utils/auth');
+const { Character } = require('../../models');
+const withAuth = require('../../utils/auth');
 
-// for handling non-auth views
+// for handling auth views
 
 // get all characters
 router.get('/', async (req, res) => {
@@ -50,32 +50,14 @@ router.get('/character/:id', async (req, res) => {
   }
 });
 
-// get user profile
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Character }],
-    });
+    const newCharacter = await Character.findAll();
 
-    const user = userData.get({ plain: true });
-
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
+    res.status(200).json(newCharacter);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(400).json(err);
   }
-});
-
-router.get('/login', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  }
-
-  res.render('login');
 });
 
 module.exports = router;
