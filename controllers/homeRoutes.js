@@ -5,6 +5,15 @@ const withAuth = require('../utils/auth');
 // for handling non-auth views if we turn this into more social media style
 
 // get user profile
+router.get('/', async (req, res) => {
+  try {
+    res.render('homepage');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// get user profile
 router.get('/profile', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
