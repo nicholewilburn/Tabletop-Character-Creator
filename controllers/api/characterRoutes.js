@@ -4,12 +4,12 @@ const withAuth = require('../../utils/auth');
 
 // for character crud
 
-// create character
-router.post('/', withAuth, async (req, res) => {
+// create character (add withAuth later?)
+router.post('/', async (req, res) => {
   try {
     const newCharacter = await Character.create({
       ...req.body,
-      user_id: req.session.user_id,
+      // user_id: req.session.user_id,
     });
 
     res.status(200).json(newCharacter);
@@ -18,13 +18,13 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-// update character
+// update character (add withAuth later?)
 router.put('/:id', async (req, res) => {
   try {
       const characterData = await Character.findByPk(req.params.id);
       characterData.set({
         ...req.body,
-        user_id: req.session.user_id,
+        // user_id: req.session.user_id,
       });
       await characterData.save();
       res.status(200).json(characterData);
@@ -33,13 +33,13 @@ router.put('/:id', async (req, res) => {
   }
 })
 
-// delete character
-router.delete('/:id', withAuth, async (req, res) => {
+// delete character (add withAuth later?)
+router.delete('/:id', async (req, res) => {
   try {
     const characterData = await Character.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        // user_id: req.session.user_id,
       },
     });
 
@@ -50,6 +50,7 @@ router.delete('/:id', withAuth, async (req, res) => {
 
     res.status(200).json(characterData);
   } catch (err) {
+    console.error(err);
     res.status(500).json(err);
   }
 });
