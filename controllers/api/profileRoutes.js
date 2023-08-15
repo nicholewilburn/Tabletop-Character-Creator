@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 
     const characters = characterData.map((character) => character.get({ plain: true }));
 
-    res.render('homepage', { 
+    res.render('profile', { 
       characters, 
       logged_in: req.session.logged_in 
     });
@@ -47,16 +47,6 @@ router.get('/character/:id', async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
-  }
-});
-
-router.get('/', async (req, res) => {
-  try {
-    const newCharacter = await Character.findAll();
-
-    res.status(200).json(newCharacter);
-  } catch (err) {
-    res.status(400).json(err);
   }
 });
 
