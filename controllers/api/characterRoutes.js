@@ -5,6 +5,21 @@ const withAuth = require('../../utils/auth');
 // for character crud
 
 // read character (add withAuth later?)
+router.get('/:id', async (req, res) => {
+  try {
+      const characterData = await Character.findByPk(req.params.id);
+
+      if (!characterData) {
+          res.status(404).json({ message: 'No character found with that id!' });
+          return;
+      }
+
+      res.status(200).json(characterData);
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
+// alternate read character that doesn't work for some reason
 // router.get('/:id', async (req, res) => {
 //   try {
 //     const characterData = await Character.findByPk(req.params.id, {
@@ -26,20 +41,6 @@ const withAuth = require('../../utils/auth');
 //     res.status(500).json(err);
 //   }
 // });
-router.get('/:id', async (req, res) => {
-  try {
-      const characterData = await Character.findByPk(req.params.id);
-
-      if (!characterData) {
-          res.status(404).json({ message: 'No character found with that id!' });
-          return;
-      }
-
-      res.status(200).json(characterData);
-  } catch (err) {
-      res.status(500).json(err);
-  }
-});
 
 // create character (add withAuth later?)
 router.post('/', async (req, res) => {

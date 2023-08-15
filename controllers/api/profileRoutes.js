@@ -4,7 +4,7 @@ const withAuth = require('../../utils/auth');
 
 // for handling auth views
 
-// get all characters
+// get all characters (add withAuth later?)
 router.get('/', async (req, res) => {
   try {
     const characterData = await Character.findAll({
