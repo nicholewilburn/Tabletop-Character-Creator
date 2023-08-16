@@ -1,38 +1,67 @@
-<<<<<<< HEAD
-<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-            <img src="../public/images/TCC Logo.png">
-        </a>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-start">
-            <a href="/" class="navbar-item">
-                Home
-            </a>
-            <a href="/api/profile" class="navbar-item">
-                Profile
-            </a>
-        </div>
 
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a href="/login" class="button is-danger">
-                        Log in
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-=======
 <!-- START FORM -->
 <div class="form">
 
+<div class="columns is-centered">
+
+<!-- STATS -->
+<div class="column is-narrow">
+<div class="box">
+
+<div class="field">
+    <label class="label">Strength</label>
+    <div class="control has-addons">
+        <input id="strField" class="input" type="text" placeholder="ROLL ME">
+        <button id="strBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Dexterity</label>
+    <div class="control">
+        <input id="dexField" class="input" type="text" placeholder="ROLL ME">
+        <button id="dexBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Consitution</label>
+    <div class="control">
+        <input id="conField" class="input" type="text" placeholder="ROLL ME">
+        <button id="conBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Intelligence</label>
+    <div class="control">
+        <input id="intField" class="input" type="text" placeholder="ROLL ME">
+        <button id="intBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Wisdom</label>
+    <div class="control">
+        <input id="wisField" class="input" type="text" placeholder="ROLL ME">
+        <button id="wisBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Charisma</label>
+    <div class="control">
+        <input id="chaField" class="input" type="text" placeholder="ROLL ME">
+        <button id="strBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+</div>
+
+</div>
+</div>
+
 <!-- BASIC -->
-<div class="box is-horizontal">
->>>>>>> ec4b314 (working on stat generation)
+<div class="column is-half">
+<div class="box">
 
 <div class="field">
     <label class="label">Name</label>
@@ -42,7 +71,7 @@
 </div>
 
 <div class="columns">
-    <div class="field column">
+    <div class="field column is-horizontal">
         <label class="label">Gender</label>
         <div class="control">
             <div class="select">
@@ -55,7 +84,7 @@
         </div>
     </div>
 
-    <div class="field column">
+    <div class="field column is-horizontal">
         <label class="label">Race</label>
         <div class="control">
             <div class="select">
@@ -68,7 +97,7 @@
         </div>
     </div>
 
-    <div class="field column">
+    <div class="field column is-horizontal">
         <label class="label">Class</label>
         <div class="control">
             <div class="select">
@@ -82,24 +111,6 @@
     </div>
 </div>
 
-</div>
-
-<!-- STATS -->
-<div class="box is-horizontal">
-
-<div class="field">
-    <label class="label">Strength</label>
-    <div class="control">
-        <input id="strField" class="input" type="text" placeholder="ROLL ME" disabled>
-        <button id="strBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
-    </div>
-</div>
-
-</div>
-
-<!-- DESCRIPTIONS -->
-<div class="box">
-
 <div class="field">
     <label class="label">Description</label>
     <div class="control">
@@ -108,8 +119,21 @@
 </div>
 
 </div>
+</div>
+
+<!--end columns -->
+</div>
+
+<!-- SUBMIT -->
+<div class="columns is-centered">
+<div class="column is-half">
+<div class="box has-text-centered">
 
 <input class="button is-success" type="submit" value="Save Character">
+
+</div>
+</div>
+</div>
 
 </div>
 <!-- END FORM -->

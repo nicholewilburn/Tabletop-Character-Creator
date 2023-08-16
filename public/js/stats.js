@@ -2,6 +2,7 @@
 //Generate a random number between 1-20
 function roll1d20 () {
     let ranNum = Math.floor(20 * Math.random()) + 1;
+    console.log(ranNum);
     return ranNum;
 }
 
@@ -17,6 +18,7 @@ function generateStr () {
     strField.value= newStr;
     strBtn.disabled = true;
     strRolled = true;
+    console.log("STR was rolled!");
     }
 }
 
@@ -32,6 +34,7 @@ function generateDex () {
     dexField.value= newDex;
     dexBtn.disabled = true;
     dexRolled = true;
+    console.log("DEX was rolled!");
     }
 }
 
@@ -47,6 +50,7 @@ function generateCon () {
     conField.value= newCon;
     conBtn.disabled = true;
     conRolled = true;
+    console.log("CON was rolled!");
     }
 }
 
@@ -62,6 +66,7 @@ function generateInt () {
     intField.value= newInt;
     intBtn.disabled = true;
     intRolled = true;
+    console.log("INT was rolled!");
     }
 }
 
@@ -77,6 +82,7 @@ function generateWis () {
     WisField.value= newWis;
     WisBtn.disabled = true;
     WisRolled = true;
+    console.log("WIS was rolled!");
     }
 }
 
@@ -92,5 +98,6 @@ function generateCha () {
     chaField.value= newCha;
     chaBtn.disabled = true;
     chaRolled = true;
+    console.log("CHA was rolled!");
     }
 }
