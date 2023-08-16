@@ -1,58 +1,86 @@
 
+<div class="block has-text-centered">
+<h3 class="title is-3">Welcome to Character Creator!</h3>
+</div>
+
 <!-- START FORM -->
-<div class="form">
+<div class="form new-character-form">
 
 <div class="columns is-centered">
 
 <!-- STATS -->
-<div class="column is-narrow">
+<div class="column is-one-quarter">
 <div class="box">
 
-<div class="field">
-    <label class="label">Strength</label>
-    <div class="control has-addons">
+<div class="field has-addons">
+    <label class="label">STR</label>
+    <div class="control">
         <input id="strField" class="input" type="text" placeholder="ROLL ME">
-        <button id="strBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+    <div class="control">
+        <a id="strBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
     </div>
 </div>
 
-<div class="field">
-    <label class="label">Dexterity</label>
+<div class="field has-addons">
+    <label class="label">DEX</label>
     <div class="control">
         <input id="dexField" class="input" type="text" placeholder="ROLL ME">
-        <button id="dexBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+    <div class="control">
+        <a id="dexBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
     </div>
 </div>
 
-<div class="field">
-    <label class="label">Consitution</label>
+<div class="field has-addons">
+    <label class="label">CON</label>
     <div class="control">
         <input id="conField" class="input" type="text" placeholder="ROLL ME">
-        <button id="conBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+    <div class="control">
+        <a id="conBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
     </div>
 </div>
 
-<div class="field">
-    <label class="label">Intelligence</label>
+<div class="field has-addons">
+    <label class="label">INT</label>
     <div class="control">
         <input id="intField" class="input" type="text" placeholder="ROLL ME">
-        <button id="intBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+    <div class="control">
+        <a id="intBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
     </div>
 </div>
 
-<div class="field">
-    <label class="label">Wisdom</label>
+<div class="field has-addons">
+    <label class="label">WIS</label>
     <div class="control">
         <input id="wisField" class="input" type="text" placeholder="ROLL ME">
-        <button id="wisBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+    <div class="control">
+        <a id="wisBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
     </div>
 </div>
 
-<div class="field">
-    <label class="label">Charisma</label>
+<div class="field has-addons">
+    <label class="label">CHA</label>
     <div class="control">
         <input id="chaField" class="input" type="text" placeholder="ROLL ME">
-        <button id="strBtn" class="button is-danger"><i class="fa-solid fa-dice"></i></button>
+    </div>
+    <div class="control">
+        <a id="chaBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
     </div>
 </div>
 
@@ -127,7 +155,7 @@
 <!-- SUBMIT -->
 <div class="columns is-centered">
 <div class="column is-half">
-<div class="box has-text-centered">
+<div class="block has-text-centered">
 
 <input class="button is-success" type="submit" value="Save Character">
 
@@ -138,5 +166,5 @@
 </div>
 <!-- END FORM -->
 
-<script src="../public/js/character.js"></script>
-<script src="../public/js/stats.js"></script>
+<script src="/js/character.js"></script>
+<script src="/js/stats.js"></script>
