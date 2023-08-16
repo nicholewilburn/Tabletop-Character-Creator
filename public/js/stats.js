@@ -8,7 +8,7 @@ function roll1d20 () {
 //Strength
 const strField = document.getElementById('strField');
 const strBtn = document.getElementById('strBtn');
-strengthBtn.addEventListener('click', generateStr);
+strBtn.addEventListener('click', generateStr);
 
 let strRolled = false;
 function generateStr () {
