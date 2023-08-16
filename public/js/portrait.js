@@ -1,3 +1,5 @@
+console.log("---portrait.js attached---");
+
 //Deepai requirements
 const deepai = require('deepai'); 
 deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');

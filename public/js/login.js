@@ -1,3 +1,5 @@
+console.log("---login.js attached---");
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
