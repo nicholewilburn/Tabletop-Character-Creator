@@ -1,30 +1,95 @@
-<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-            <img src="/images/TCC Logo.png">
+
+<div class="block has-text-centered">
+<h3 class="title is-3">Welcome to Character Creator!</h3>
+</div>
+
+<!-- START FORM -->
+<div class="form new-character-form">
+
+<div class="columns is-centered">
+
+<!-- STATS -->
+<div class="column is-one-quarter">
+<div class="box">
+
+<div class="field has-addons">
+    <label class="label">STR</label>
+    <div class="control">
+        <input id="strField" class="input" type="text" placeholder="ROLL ME">
+    </div>
+    <div class="control">
+        <a id="strBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
         </a>
     </div>
-    <div class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
-            <a class="navbar-item">
-                Profile
-            </a>
-        </div>
+</div>
 
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-danger">
-                        Log in
-                    </a>
-                </div>
-            </div>
-        </div>
+<div class="field has-addons">
+    <label class="label">DEX</label>
+    <div class="control">
+        <input id="dexField" class="input" type="text" placeholder="ROLL ME">
     </div>
-</nav>
+    <div class="control">
+        <a id="dexBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
+    </div>
+</div>
+
+<div class="field has-addons">
+    <label class="label">CON</label>
+    <div class="control">
+        <input id="conField" class="input" type="text" placeholder="ROLL ME">
+    </div>
+    <div class="control">
+        <a id="conBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
+    </div>
+</div>
+
+<div class="field has-addons">
+    <label class="label">INT</label>
+    <div class="control">
+        <input id="intField" class="input" type="text" placeholder="ROLL ME">
+    </div>
+    <div class="control">
+        <a id="intBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
+    </div>
+</div>
+
+<div class="field has-addons">
+    <label class="label">WIS</label>
+    <div class="control">
+        <input id="wisField" class="input" type="text" placeholder="ROLL ME">
+    </div>
+    <div class="control">
+        <a id="wisBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
+    </div>
+</div>
+
+<div class="field has-addons">
+    <label class="label">CHA</label>
+    <div class="control">
+        <input id="chaField" class="input" type="text" placeholder="ROLL ME">
+    </div>
+    <div class="control">
+        <a id="chaBtn" class="button is-danger is-info">
+            <i class="fa-solid fa-dice"></i>
+        </a>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- BASIC -->
+<div class="column is-half">
+<div class="box">
 
 <div class="field">
     <label class="label">Name</label>
@@ -33,41 +98,43 @@
     </div>
 </div>
 
-<div class="field">
-    <label class="label">Gender</label>
-    <div class="control">
-        <div class="select">
-            <select>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Non-Binary</option>
-            </select>
+<div class="columns">
+    <div class="field column is-horizontal">
+        <label class="label">Gender</label>
+        <div class="control">
+            <div class="select">
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Non-Binary</option>
+                </select>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="field">
-    <label class="label">Race</label>
-    <div class="control">
-        <div class="select">
-            <select>
-                <option>Human</option>
-                <option>Elf</option>
-                <option>Dwarf</option>
-            </select>
+    <div class="field column is-horizontal">
+        <label class="label">Race</label>
+        <div class="control">
+            <div class="select">
+                <select>
+                    <option>Human</option>
+                    <option>Elf</option>
+                    <option>Dwarf</option>
+                </select>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="field">
-    <label class="label">Class</label>
-    <div class="control">
-        <div class="select">
-            <select>
-                <option>Cleric</option>
-                <option>Fighter</option>
-                <option>Rogue</option>
-            </select>
+    <div class="field column is-horizontal">
+        <label class="label">Class</label>
+        <div class="control">
+            <div class="select">
+                <select>
+                    <option>Cleric</option>
+                    <option>Fighter</option>
+                    <option>Rogue</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>
@@ -79,8 +146,25 @@
     </div>
 </div>
 
-<!-- STATS -->
+</div>
+</div>
+
+<!--end columns -->
+</div>
+
+<!-- SUBMIT -->
+<div class="columns is-centered">
+<div class="column is-half">
+<div class="block has-text-centered">
 
 <input class="button is-success" type="submit" value="Save Character">
 
+</div>
+</div>
+</div>
+
+</div>
+<!-- END FORM -->
+
 <script src="/js/character.js"></script>
+<script src="/js/stats.js"></script>

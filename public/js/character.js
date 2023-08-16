@@ -55,6 +55,6 @@ document
   .querySelector('.new-character-form')
   .addEventListener('submit', newFormHandler);
 
-document
-  .querySelector('.character-list')
-  .addEventListener('click', delButtonHandler);
+// document
+//   .querySelector('.character-list')
+//   .addEventListener('click', delButtonHandler);
