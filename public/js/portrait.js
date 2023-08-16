@@ -8,7 +8,7 @@ deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
 const submitBtn = document.getElementById('submitBtn');
 
 //Apply button (will apply generated image to character database)
-const applyBtn = document.getElementById('generateHolder');
+const applyBtn = document.getElementById('applyBtn');
 
 //User text input field
 var userText = document.getElementById('yourFileInputId');
