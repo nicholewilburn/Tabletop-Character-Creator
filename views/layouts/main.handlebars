@@ -10,34 +10,6 @@
     <script src="https://kit.fontawesome.com/a348674b50.js" crossorigin="anonymous"></script>
 </head>
 
-<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-            <img src="../images/TCC Logo.png">
-        </a>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-start">
-            <a href="/" class="navbar-item">
-                Home
-            </a>
-            <a href="/api/profile" class="navbar-item">
-                Profile
-            </a>
-        </div>
-
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a href="/login" class="button is-danger">
-                        Log in
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
 <body>
     <main>
         {{{body}}}
@@ -46,11 +18,11 @@
 
 </html>
 
-{{!-- 
+{{!--
 example of conditional login/logout button
 <header class="flex items-center justify-between bg-base-300">
     <h1 class="pl-4 font-bold">
-    Link Aggregator
+        Link Aggregator
     </h1>
     <!-- Conditionally rendering the logout button if the user is logged in  -->
     {{#if logged_in}}
