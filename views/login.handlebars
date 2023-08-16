@@ -1,40 +1,18 @@
-<header>
-    <h1 class="title is-1 has-text-centered">Tabletop Character Creator</h1>
-</header>
-
-<div class="columns is-flex-wrap-wrap">
-    <div class="column field is-full is-justify-content-center is-flex">
-        <div class="field column is-one-third">
-            <p class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-            </p>
-        </div>
-    </div>
-
-    <div class="column field is-full is-justify-content-center is-flex">
-        <div class="field column is-one-third">
-            <p class="control has-icons-left">
-                <input class="input" type="password" placeholder="Password">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                </span>
-            </p>
-        </div>
-    </div>
-
-    <div class="buttons column is-two-thirds is-align-self-center is-flex is-justify-content-center">
-        <button class="button is-success login-form">
-            Login
-        </button>
+<!-- Header Logo -->
+<div class="columns is-centered mt-2 has-background-dark">
+    <div class="column is-7">
+        <figure class="image">
+            <img src="/public/images/TCC Logo.png">
+        </figure>
     </div>
 </div>
 
-<h2 class="title is-2 has-text-centered">No account? Create One Here:</h2>
-<div class="columns is-flex-wrap-wrap">
-    <div class="column field is-full is-justify-content-center is-flex">
+<!-- Sign in -->
+<h1 class="title is-1 has-text-centered">Sign in to your account</h1>
+
+<div class="columns is-flex-wrap-wrap is-justify-content-center">
+    <!-- Email Input -->
+    <div class="column field is-full is-justify-content-center is-flex mb-0 pb-0">
         <div class="field column is-one-third">
             <p class="control has-icons-left has-icons-right">
                 <input class="input" type="email" placeholder="Email">
@@ -44,8 +22,8 @@
             </p>
         </div>
     </div>
-
-    <div class="column field is-full is-justify-content-center is-flex">
+    <!-- Password Input -->
+    <div class="column field is-full is-justify-content-center is-flex pt-0 mb-0 pb-0">
         <div class="field column is-one-third">
             <p class="control has-icons-left">
                 <input class="input" type="password" placeholder="Password">
@@ -55,9 +33,53 @@
             </p>
         </div>
     </div>
+    <!-- Sign In Button -->
+    <div class="column is-one-third">
+        <button class="button is-success login-form is-fullwidth">
+            Log in
+        </button>
+    </div>
+</div>
+<!-- Create New Account -->
+<h2 class="title is-2 has-text-centered mt-6">No account? Create One Here:</h2>
 
-    <div class="buttons column is-two-thirds is-align-self-center is-flex is-justify-content-center">
-        <button class="button is-success">
+<div class="columns is-flex-wrap-wrap is-justify-content-center">
+    <!-- Username input -->
+    <div class="column field is-full is-justify-content-center is-flex mb-0 pb-0">
+        <div class="column is-one-third">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Username">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- Email input -->
+    <div class="column is-full is-justify-content-center is-flex pt-0 mb-0 pb-0">
+        <div class="column is-one-third">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- Password input -->
+    <div class="column field is-full is-justify-content-center is-flex pt-0 mb-0 pb-0">
+        <div class="field column is-one-third">
+            <p class="control has-icons-left">
+                <input class="input" type="password" placeholder="Password">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- Create Account Button -->
+    <div class="column is-one-third">
+        <button class="button is-success login-form is-fullwidth">
             Create Account
         </button>
     </div>
