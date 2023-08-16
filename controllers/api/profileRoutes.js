@@ -19,8 +19,8 @@ router.get('/', async (req, res) => {
     const characters = characterData.map((character) => character.get({ plain: true }));
 
     res.render('profile', { 
-      characters, 
-      logged_in: req.session.logged_in 
+      ...characters, 
+      // logged_in: req.session.logged_in 
     });
   } catch (err) {
     res.status(500).json(err);
