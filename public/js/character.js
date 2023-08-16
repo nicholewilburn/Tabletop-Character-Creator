@@ -1,3 +1,5 @@
+console.log("---character.js attached---");
+
 const newFormHandler = async (event) => {
   event.preventDefault();
 
@@ -11,12 +13,12 @@ const newFormHandler = async (event) => {
   // const look = document.querySelector('#look').value.trim();
   // const personality = document.querySelector('#personality').value.trim();
 
-  // const strength = document.querySelector('#strength').value.trim();
-  // const dexterity = document.querySelector('#dexterity').value.trim();
-  // const charisma = document.querySelector('#charisma').value.trim();
-  // const intelligence = document.querySelector('#intelligence').value.trim();
-  // const wisdom = document.querySelector('#wisdom').value.trim();
-  // const charisma = document.querySelector('#charisma').value.trim();
+  const strength = document.querySelector('#strField').value.trim();
+  const dexterity = document.querySelector('#dexField').value.trim();
+  const consitution = document.querySelector('#chaField').value.trim();
+  const intelligence = document.querySelector('#intField').value.trim();
+  const wisdom = document.querySelector('#wisField').value.trim();
+  const charisma = document.querySelector('#chaField').value.trim();
 
   if (name && gender && race && classs && description) {
     const response = await fetch(`/api/characters`, {

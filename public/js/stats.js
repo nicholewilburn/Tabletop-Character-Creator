@@ -1,3 +1,11 @@
+console.log("---stats.js attached---");
+
+let strRolled = false;
+let dexRolled = false;
+let conRolled = false;
+let intRolled = false;
+let wisRolled = false;
+let chaRolled = false;
 
 //Generate a random number between 1-20
 function roll1d20 () {
@@ -11,15 +19,18 @@ const strField = document.getElementById('strField');
 const strBtn = document.getElementById('strBtn');
 strBtn.addEventListener('click', generateStr);
 
-let strRolled = false;
 function generateStr () {
-    if (strRolled = false) {
-    const newStr = roll1d20();
+    if (strRolled === false) {
+    console.log("STR generating...");
+    const newStr = Math.floor(20 * Math.random()) + 1;
+    console.log(newStr);
     strField.value= newStr;
-    strBtn.disabled = true;
-    strRolled = true;
     console.log("STR was rolled!");
     }
+    else {
+        console.log("Cannot re-roll!");
+    }
+    strRolled = true;
 }
 
 //Dexterity
@@ -27,15 +38,18 @@ const dexField = document.getElementById('dexField');
 const dexBtn = document.getElementById('dexBtn');
 dexBtn.addEventListener('click', generateDex);
 
-let dexRolled = false;
 function generateDex () {
-    if (dexRolled = false) {
-    const newDex = roll1d20();
+    if (dexRolled === false) {
+    console.log("DEX generating...");
+    const newDex = Math.floor(20 * Math.random()) + 1;
+    console.log(newDex);
     dexField.value= newDex;
-    dexBtn.disabled = true;
-    dexRolled = true;
     console.log("DEX was rolled!");
     }
+    else {
+        console.log("Cannot re-roll!");
+    }
+    dexRolled = true;
 }
 
 //Constitution
@@ -43,15 +57,18 @@ const conField = document.getElementById('conField');
 const conBtn = document.getElementById('conBtn');
 conBtn.addEventListener('click', generateCon);
 
-let conRolled = false;
 function generateCon () {
-    if (conRolled = false) {
-    const newCon = roll1d20();
+    if (conRolled === false) {
+    console.log("CON generating...");
+    const newCon = Math.floor(20 * Math.random()) + 1;
+    console.log(newCon);
     conField.value= newCon;
-    conBtn.disabled = true;
-    conRolled = true;
     console.log("CON was rolled!");
     }
+    else {
+        console.log("Cannot re-roll!");
+    }
+    conRolled = true;
 }
 
 //Intelligence
@@ -59,15 +76,18 @@ const intField = document.getElementById('intField');
 const intBtn = document.getElementById('intBtn');
 intBtn.addEventListener('click', generateInt);
 
-let intRolled = false;
 function generateInt () {
-    if (intRolled = false) {
-    const newInt = roll1d20();
+    if (intRolled === false) {
+    console.log("INT generating...");
+    const newInt = Math.floor(20 * Math.random()) + 1;
+    console.log(newInt);
     intField.value= newInt;
-    intBtn.disabled = true;
-    intRolled = true;
     console.log("INT was rolled!");
     }
+    else {
+        console.log("Cannot re-roll!");
+    }
+    intRolled = true;
 }
 
 //Wisdom
@@ -75,15 +95,18 @@ const wisField = document.getElementById('wisField');
 const wisBtn = document.getElementById('wisBtn');
 wisBtn.addEventListener('click', generateWis);
 
-let wisRolled = false;
 function generateWis () {
-    if (wisRolled = false) {
-    const newWis = roll1d20();
-    WisField.value= newWis;
-    WisBtn.disabled = true;
-    WisRolled = true;
+    if (wisRolled === false) {
+    console.log("WIS generating...");
+    const newWis = Math.floor(20 * Math.random()) + 1;
+    console.log(newWis);
+    wisField.value= newWis;
     console.log("WIS was rolled!");
     }
+    else {
+        console.log("Cannot re-roll!");
+    }
+    wisRolled = true;
 }
 
 //Charisma
@@ -91,13 +114,16 @@ const chaField = document.getElementById('chaField');
 const chaBtn = document.getElementById('chaBtn');
 chaBtn.addEventListener('click', generateCha);
 
-let chaRolled = false;
 function generateCha () {
-    if (chaRolled = false) {
-    const newCha = roll1d20();
+    if (chaRolled === false) {
+    console.log("CHA generating...");
+    const newCha = Math.floor(20 * Math.random()) + 1;
+    console.log(newCha);
     chaField.value= newCha;
-    chaBtn.disabled = true;
-    chaRolled = true;
     console.log("CHA was rolled!");
     }
+    else {
+        console.log("Cannot re-roll!");
+    }
+    chaRolled = true;
 }
