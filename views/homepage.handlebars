@@ -17,9 +17,11 @@
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a href="/login" class="button is-danger">
-                        Log in
-                    </a>
+                    {{#if logged_in}}
+                    <a href="/users/logout" class="button is-danger" id="logout">Log Out</a>
+                    {{else}}
+                    <a href="/login" class="button is-danger">Log in</a>
+                    {{/if}}
                 </div>
             </div>
         </div>
@@ -195,3 +197,5 @@
 
 <script src="/js/character.js"></script>
 <script src="/js/stats.js"></script>
+<script src="/js/login.js"></script>
+<script src="/js/logoutjs"></script>
