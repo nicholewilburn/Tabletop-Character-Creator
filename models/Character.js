@@ -79,6 +79,11 @@ Character.init(
         type: DataTypes.INTEGER,
         allowNull: false,
       },
+    //PORTRAIT URL
+    portrait_url: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     sequelize,

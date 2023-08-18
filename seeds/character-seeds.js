@@ -17,6 +17,7 @@ const characterData = [
     intelligence: 9,
     wisdom: 10,
     charisma: 11,
+    portrait_url: null,
 },
   {
     user_id: 2,
@@ -34,6 +35,7 @@ const characterData = [
     intelligence: 18,
     wisdom: 12,
     charisma: 8,
+    portrait_url: null,
   },
 ];
 
