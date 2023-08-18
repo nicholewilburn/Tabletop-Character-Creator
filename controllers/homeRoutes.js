@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 // for handling non-auth views if we turn this into more social media style
 
-// get user profile
+// get homepage character creator
 router.get('/', async (req, res) => {
   try {
     res.render('homepage');
@@ -32,7 +32,7 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-router.get('/users/login', (req, res) => {
+router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;
