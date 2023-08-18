@@ -1,126 +1,72 @@
-# Tabletop-Character-Creator
+# Geek Squad's Character Creator
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
+## Table of contents
+* [Description](#description)
+* [User Story](#installIns)
+* [Acceptance Criteria](#usage)
+* [Sample Image](#contribution)
+* [Technologies Used](#testIns)
+* [License](#license)
+* [Contributors](#questions)
 
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+<a name="description"></a>
+## Description 
+Character Creator is a place to keep all your characters in one place, and also brainstorm new ones. It’s also a hub meant to find other like-minded players and join in their worlds, too.
 
-## Project Requirements
+<a name="installIns"></a>
+## User Story 
+```md
+AS an imaginative individual, 
+I WANT to keep all of my creations in one place, 
+SO THAT Im organized
+AS a player looking for other players, 
+I WANT to find other people who have my same goals 
+SO THAT I can play even more!
+AS someone needing help brainstorming characters, 
+I WANT a place to help me with new ideas 
+SO THAT my imagination comes to life
+```
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+<a name="usage"></a>
+## Acceptance Criteria 
 
-* Use Node.js and Express.js to create a RESTful API.
+<img src="images\project2-01.png">
+<img src="images\project2-02.png">
+<img src="images\project2-03.png">
+<img src="images\project2-04.png">
 
-* Use Handlebars.js as the template engine.
+<a name="contribution"></a>
+## Sample Image
 
-* Use MySQL and the Sequelize ORM for the database.
+<img src="images\83016bf69155c833e99af0687a410c31.png">
 
-* Have both GET and POST routes for retrieving and adding new data.
+<a name="testIns"></a>
+## Technologies Used
 
-* Use at least one new library, package, or technology that we haven’t discussed.
+* HTML/CSS
+* Javascript
+* Node.js
+* MySQL2
+* Express
+* Express-Handlebars
+* Express-Session
+* Sequelize
+* Connect-Session-Sequelize
+* Bcrypt
+* Dotenv
+* Heroku
 
-* Have a folder structure that meets the MVC paradigm.
+<a name="license"></a>
+## License
+CC0 1.0
+- https://creativecommons.org/publicdomain/zero/1.0/
+    The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
 
-* Include authentication (express-session and cookies).
+    You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
 
-* Protect API keys and sensitive information with environment variables.
-
-* Be deployed using Heroku (with data).
-
-* Have a polished UI.
-
-* Be responsive.
-
-* Be interactive (i.e., accept and respond to user input).
-
-* Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-* Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-## Presentation Requirements
-
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
-
-* Elevator pitch: a one minute description of your application
-
-* Concept: What is your user story? What was your motivation for development?
-
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-* Demo: Show your stuff!
-
-* Directions for Future Development
-
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
-
-## Grading Requirements
-
-This project is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 25%
-
-* Satisfies the following code requirements:
-
-  * Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
-
-  * Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
-
-  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
-
-  * Application includes user authentication (express-session and cookies).
-
-  * Application uses at least one new library, package, or technology not covered in class.
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using a slide deck.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Full-Stack Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+<a name="questions"></a>   
+## Contributors
+- https://github.com/nicholewilburn
+- https://github.com/quincymaynor
+- https://github.com/halversonm
