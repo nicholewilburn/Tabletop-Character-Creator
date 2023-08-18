@@ -9,7 +9,7 @@
             <a href="/" class="navbar-item">
                 Home
             </a>
-            <a href="/api/profile" class="navbar-item">
+            <a href="/profile" class="navbar-item">
                 Profile
             </a>
         </div>
@@ -17,9 +17,11 @@
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a href="/login" class="button is-danger">
-                        Log in
-                    </a>
+                    {{#if logged_in}}
+                    <button class="button is-danger" id="logout">Log Out</button>
+                    {{else}}
+                    <a href="/login" class="button is-danger">Log in</a>
+                    {{/if}}
                 </div>
             </div>
         </div>
@@ -214,3 +216,5 @@
 <script src="/js/character.js"></script>
 <script src="/js/stats.js"></script>
 <script src="/js/tooltip.js"></script>
+<script src="/js/login.js"></script>
+<script src="/js/logout.js"></script>

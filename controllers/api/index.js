@@ -5,7 +5,7 @@ const characterRoutes = require('./characterRoutes');
 const portraitRoutes = require('./characterRoutes');
 
 router.use('/users', userRoutes);
-router.use('/profile', profileRoutes);
+router.use('/', profileRoutes);
 router.use('/characters', characterRoutes);
 router.use('/portrait', portraitRoutes);
 

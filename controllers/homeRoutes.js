@@ -4,10 +4,12 @@ const withAuth = require('../utils/auth');
 
 // for handling non-auth views if we turn this into more social media style
 
-// get user profile
+// get homepage character creator
 router.get('/', async (req, res) => {
   try {
-    res.render('homepage');
+    res.render('homepage', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -23,6 +25,8 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
+    console.log('user', user);
+    
     res.render('profile', {
       ...user,
       logged_in: true
@@ -32,7 +36,7 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-router.get('/users/login', (req, res) => {
+router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;
@@ -40,5 +44,7 @@ router.get('/users/login', (req, res) => {
 
   res.render('login');
 });
+
+
 
 module.exports = router;

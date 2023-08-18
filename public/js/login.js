@@ -17,6 +17,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+      console.log('redirecting')
       // If successful, redirect the browser to the profile page
       document.location.replace('/profile');
     } else {
@@ -46,11 +47,9 @@ const signupFormHandler = async (event) => {
     }
   }
 };
+console.log('form', document
+.querySelector('.login-form')
+)
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 
-document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
-
-document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signupFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
