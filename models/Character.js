@@ -42,18 +42,23 @@ Character.init(
         allowNull: true,
       },
     //DESCRIPTION
-    background: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-    look: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-    personality: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    //SPECIFIC DESCRIPTIONS
+    // background: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //   },
+    // look: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //   },
+    // personality: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //   },
     //ATTRIBUTES
     strength: {
         type: DataTypes.INTEGER,
