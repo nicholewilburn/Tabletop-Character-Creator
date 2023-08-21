@@ -9,7 +9,7 @@
             <a href="/" class="navbar-item">
                 Home
             </a>
-            <a href="/profile" class="navbar-item">
+            <a href="/api/profile" class="navbar-item">
                 Profile
             </a>
         </div>
@@ -33,7 +33,7 @@
 </div>
 
 <!-- START FORM -->
-<div class="form new-character-form">
+<form class="form new-character-form">
 
     <div class="columns is-centered">
 
@@ -124,7 +124,7 @@
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Enter character name">
+                        <input class="input" id="character-name" type="text" placeholder="Enter character name">
                     </div>
                 </div>
 
@@ -132,7 +132,7 @@
                     <div class="field column is-horizontal">
                         <label class="label">Gender</label>
                         <div class="control">
-                            <div class="select">
+                            <div class="select" id="gender">
                                 <select>
                                     <option>Male</option>
                                     <option>Female</option>
@@ -145,7 +145,7 @@
                     <div class="field column is-horizontal">
                         <label class="label">Race</label>
                         <div class="control">
-                            <div class="select">
+                            <div class="select" id="race">
                                 <select>
                                     <option>Dragonborn</option>
                                     <option>Dwarf</option>
@@ -164,7 +164,7 @@
                     <div class="field column is-horizontal">
                         <label class="label">Class</label>
                         <div class="control">
-                            <div class="select">
+                            <div class="select" id="classs">
                                 <select>
                                     <option>Barbarian</option>
                                     <option>Bard</option>
@@ -188,7 +188,7 @@
 
                 <div class="field">
                     <label class="label">Description</label>
-                    <div class="control">
+                    <div class="control" id="description">
                         <textarea class="textarea" placeholder="Enter character description"></textarea>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
         </div>
 
         <!--end columns -->
-    </div>
+    </form>
 
     <!-- SUBMIT -->
     <div class="columns is-centered">

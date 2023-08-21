@@ -4,11 +4,11 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#character-name').value.trim();
-  const gender = document.querySelector('#gender').value.trim();
-  const race = document.querySelector('#race').value.trim();
-  const classs = document.querySelector('#classs').value.trim();
+  const gender = document.querySelector('#gender').value;
+  const race = document.querySelector('#race').value;
+  const classs = document.querySelector('#classs').value;
 
-  const description = document.querySelector('#description').value.trim();
+  const description = document.querySelector('#description').value;
   // const background = document.querySelector('#background').value.trim();
   // const look = document.querySelector('#look').value.trim();
   // const personality = document.querySelector('#personality').value.trim();
@@ -20,6 +20,7 @@ const newFormHandler = async (event) => {
   const wisdom = document.querySelector('#wisField').value.trim();
   const charisma = document.querySelector('#chaField').value.trim();
 
+  // && strength && dexterity && consitution && intelligence && wisdom && charisma?
   if (name && gender && race && classs && description) {
     const response = await fetch(`/api/characters`, {
       method: 'POST',
