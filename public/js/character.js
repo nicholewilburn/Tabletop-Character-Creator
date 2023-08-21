@@ -4,37 +4,40 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#character-name').value.trim();
-  const gender = document.querySelector('#gender').value;
-  const race = document.querySelector('#race').value;
-  const classs = document.querySelector('#classs').value;
+  const gender = document.querySelector('#gender').value.trim();
+  // const gender = genderQ.options[genderQ.selectedIndex].value.trim();
+  const race = document.querySelector('#race').value.trim();
+  const classs = document.querySelector('#classs').value.trim();
 
-  const description = document.querySelector('#description').value;
+  const description = document.querySelector('#description').value.trim();
   // const background = document.querySelector('#background').value.trim();
   // const look = document.querySelector('#look').value.trim();
   // const personality = document.querySelector('#personality').value.trim();
 
   const strength = document.querySelector('#strField').value.trim();
   const dexterity = document.querySelector('#dexField').value.trim();
-  const consitution = document.querySelector('#chaField').value.trim();
+  const constitution = document.querySelector('#chaField').value.trim();
   const intelligence = document.querySelector('#intField').value.trim();
   const wisdom = document.querySelector('#wisField').value.trim();
   const charisma = document.querySelector('#chaField').value.trim();
 
-  // && strength && dexterity && consitution && intelligence && wisdom && charisma?
-  if (name && gender && race && classs && description) {
+  
+  if (name && gender && race && classs && description && strength && dexterity && constitution && intelligence && wisdom && charisma) {
     const response = await fetch(`/api/characters`, {
       method: 'POST',
-      body: JSON.stringify({ name, gender, race, classs, description }),
+      body: JSON.stringify({ name, gender, race, class:classs, description, strength, dexterity, constitution, intelligence, wisdom, charisma }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/api/profile');
     } else {
       alert('Failed to create character');
     }
+  } else {
+    console.error(name, gender, race, classs, description)
   }
 };
 
