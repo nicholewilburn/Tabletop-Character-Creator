@@ -5,7 +5,7 @@
 * [Description](#description)
 * [User Story](#installIns)
 * [Acceptance Criteria](#usage)
-* [Sample Image](#contribution)
+* [Access The Site](#contribution)
 * [Technologies Used](#testIns)
 * [License](#license)
 * [Contributors](#questions)
@@ -37,9 +37,9 @@ SO THAT my imagination comes to life
 <img src="images\project2-04.png">
 
 <a name="contribution"></a>
-## Sample Image
+## Access the site
 
-<img src="images\83016bf69155c833e99af0687a410c31.png">
+[img src="images\83016bf69155c833e99af0687a410c31.png">](https://tabletop-character-creator-d355a7356b6d.herokuapp.com/)
 
 <a name="testIns"></a>
 ## Technologies Used
